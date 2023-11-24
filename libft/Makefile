@@ -6,7 +6,7 @@
 #    By: pmelis <pmelis@student.42wolfsburg.de>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 12:37:00 by pmelis            #+#    #+#              #
-#    Updated: 2023/11/24 19:48:31 by pmelis           ###   ########.fr        #
+#    Updated: 2023/11/24 20:06:45 by pmelis           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,6 +63,7 @@ MY_SOURCES = ft_isalpha.c \
 		ft_lstmap.c \
 		ft_atod.c \
 		ft_atol.c \
+		ft_get_next_line.c \
 
 # Name of the output library
 NAME = libft.a

@@ -6,7 +6,7 @@
 /*   By: pmelis <pmelis@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 13:04:58 by pmelis            #+#    #+#             */
-/*   Updated: 2023/11/24 19:48:07 by pmelis           ###   ########.fr       */
+/*   Updated: 2023/11/24 20:06:20 by pmelis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1000
+# endif
 
 typedef struct s_list
 {
@@ -67,6 +71,7 @@ int				ft_puthex(unsigned long n, char c);
 int				ft_printf(const char *format, ...);
 double			atod(char	*str);
 long			ft_atol(const char *str);
+char			*get_next_line(int fd);
 
 t_list			*ft_lstnew(void *content);
 void			ft_lstadd_front(t_list **lst, t_list *new);
