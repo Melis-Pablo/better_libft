@@ -6,7 +6,7 @@
 /*   By: pmelis <pmelis@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 13:04:58 by pmelis            #+#    #+#             */
-/*   Updated: 2023/11/24 19:23:53 by pmelis           ###   ########.fr       */
+/*   Updated: 2023/11/24 19:48:07 by pmelis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ int				ft_putunsigned(unsigned int u);
 int				ft_puthex(unsigned long n, char c);
 int				ft_printf(const char *format, ...);
 double			atod(char	*str);
+long			ft_atol(const char *str);
 
 t_list			*ft_lstnew(void *content);
 void			ft_lstadd_front(t_list **lst, t_list *new);
