@@ -6,7 +6,7 @@
 #    By: pmelis <pmelis@student.42wolfsburg.de>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 12:37:00 by pmelis            #+#    #+#              #
-#    Updated: 2023/11/24 19:00:45 by pmelis           ###   ########.fr        #
+#    Updated: 2023/11/24 19:11:11 by pmelis           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,17 +52,15 @@ MY_SOURCES = ft_isalpha.c \
 		ft_putunsigned.c \
 		ft_puthex.c \
 		ft_printf.c \
-
-# List of bonus source files for the library
-MY_BONUS_SOURCES =	ft_lstnew.c \
-					ft_lstadd_front.c \
-					ft_lstsize.c \
-					ft_lstadd_back.c \
-					ft_lstlast.c \
-					ft_lstdelone.c \
-					ft_lstclear.c \
-					ft_lstiter.c \
-					ft_lstmap.c \
+		ft_lstnew.c \
+		ft_lstadd_front.c \
+		ft_lstsize.c \
+		ft_lstadd_back.c \
+		ft_lstlast.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c \
 
 # Name of the output library
 NAME = libft.a
@@ -72,9 +70,6 @@ CFLAGS = -Wall -Wextra -Werror
 
 # Object files for the main library
 MY_OBJECTS = $(MY_SOURCES:.c=.o)
-
-# Object files for the bonus library
-MY_BONUS_OBJECTS = $(MY_BONUS_SOURCES:.c=.o)
 
 # Default target - builds the main library
 all: $(NAME)
@@ -92,20 +87,16 @@ $(NAME): $(MY_OBJECTS)
 	
 # Target to clean up object files
 clean:
-	@rm -f $(MY_OBJECTS) $(MY_BONUS_OBJECTS)            # delete object files
+	@rm -f $(MY_OBJECTS)           # delete object files
 	@echo "OBJ deleted"
 
 # Target to clean up object files and the library
 fclean: clean
-	@rm -f $(NAME) bonus                # delete the library archive
+	@rm -f $(NAME)                 # delete the library archive
 	@echo "$(NAME) deleted"
 
 # Target to rebuild the library
 re: fclean all
 
-# Target to build the bonus library
-bonus: $(MY_OBJECTS) $(MY_BONUS_OBJECTS)
-	ar rcs $(NAME) $(MY_OBJECTS) $(MY_BONUS_OBJECTS)
-
 # Declare these targets as phony, to ensure they always run
-.PHONY: all, clean, fclean, re, bonus
+.PHONY: all, clean, fclean, re
