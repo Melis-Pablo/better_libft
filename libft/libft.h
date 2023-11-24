@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pmelis <pmelis@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pmelis <pmelis@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 13:04:58 by pmelis            #+#    #+#             */
-/*   Updated: 2023/11/22 17:59:56 by pmelis           ###   ########.fr       */
+/*   Updated: 2023/11/24 18:50:10 by pmelis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,11 @@ void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
 int				ft_strcmp(char *s1, char *s2);
+int				ft_putchr(char c);
+int				ft_putstr(char *args);
+int				ft_putnbr(int n);
+int				ft_putunsigned(unsigned int u);
+int				ft_puthex(unsigned long n, char c);
 
 t_list			*ft_lstnew(void *content);
 void			ft_lstadd_front(t_list **lst, t_list *new);
