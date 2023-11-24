@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pmelis <pmelis@student.42.fr>              +#+  +:+       +#+         #
+#    By: pmelis <pmelis@student.42wolfsburg.de>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 12:37:00 by pmelis            #+#    #+#              #
-#    Updated: 2023/11/22 18:00:48 by pmelis           ###   ########.fr        #
+#    Updated: 2023/11/24 19:00:45 by pmelis           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,12 @@ MY_SOURCES = ft_isalpha.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 		ft_strcmp.c \
+		ft_putchr.c \
+		ft_putstr.c \
+		ft_putnbr.c \
+		ft_putunsigned.c \
+		ft_puthex.c \
+		ft_printf.c \
 
 # List of bonus source files for the library
 MY_BONUS_SOURCES =	ft_lstnew.c \

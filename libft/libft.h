@@ -6,7 +6,7 @@
 /*   By: pmelis <pmelis@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 13:04:58 by pmelis            #+#    #+#             */
-/*   Updated: 2023/11/24 18:50:10 by pmelis           ###   ########.fr       */
+/*   Updated: 2023/11/24 19:01:15 by pmelis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
@@ -63,6 +64,7 @@ int				ft_putstr(char *args);
 int				ft_putnbr(int n);
 int				ft_putunsigned(unsigned int u);
 int				ft_puthex(unsigned long n, char c);
+int				ft_printf(const char *format, ...);
 
 t_list			*ft_lstnew(void *content);
 void			ft_lstadd_front(t_list **lst, t_list *new);
